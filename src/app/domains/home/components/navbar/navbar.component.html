@@ -1,0 +1,27 @@
+<nav class="w-auto h-16 flex justify-between items-center font-normal text-lg px-2">
+  <img [src]="img()" alt="Logotipo" class="h-full p-2 ml-2" >
+  <ul class="max-[450px]:hidden flex justify-between gap-4">
+    <li class="cursor-pointer"><a routerLink="/">About me</a></li>
+    <li>Marketer</li>
+    <li>Programer</li>
+  </ul>
+  <button *ngIf="!desplegar; else menuDesplegado" (click)="abrirMenu()" class="flex justify-center bg-red-700 items-center">
+    <mat-icon><span class="material-symbols-outlined">
+      menu
+      </span></mat-icon>
+  </button>
+
+  <ng-template #menuDesplegado>
+    <a href=""> hola
+      <input type="button" (click)="abrirMenu()">
+    </a>
+
+    <div *ngIf="desplegar" class="bg-white rounded-sm static mt-36 h-36 w-24">
+      <ul class="flex justify-center items-center flex-col">
+        <li>About Me</li>
+        <li>Marketer</li>
+        <li>Programer</li>
+      </ul>
+    </div>
+  </ng-template>
+</nav>

@@ -1,0 +1,61 @@
+
+svg{
+  width: 400px;
+}
+.cls-1{
+  fill: black;
+  stroke-width: 2px;
+  stroke:rgb(5, 18, 203);
+  stroke-dasharray: 200;
+  fill-opacity: 0;
+}
+.cls-2{
+  fill: black;
+  stroke-width: 2px;
+  stroke:rgb(5, 18, 203);
+  stroke-dasharray: 200;
+  fill-opacity: 0;
+
+}
+.cls-3{
+  fill: #fff;
+  stroke-width: 2px;
+  stroke: black;
+  stroke:rgb(5, 18, 203);
+  stroke-dasharray: 200;
+  fill-opacity: 0;
+}
+.cls-4{
+  fill: #fff;
+  stroke-width: 2px;
+  stroke: black;
+  stroke:rgb(5, 18, 203);
+  stroke-dasharray: 200;
+  fill-opacity: 0;
+}
+.cls-5{
+  fill: white;
+  stroke-width: 2px;
+  stroke: black;
+  stroke:rgb(5, 18, 203);
+  stroke-dasharray: 200;
+  fill-opacity: 0;
+}
+
+.cls-1, .cls-2, .cls-3, .cls-4, .cls-5{
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+
+}
+
+
+@keyframes dash {
+  to {
+    transition: all 5s ease-in-out;
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+    stroke: black;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+  }
+}
